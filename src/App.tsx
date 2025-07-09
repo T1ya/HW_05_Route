@@ -1,13 +1,11 @@
 
 import './App.css'
-import { AgePredictor } from './components/AgePredictor/AgePredictor';
+import GenderPredictor from './components/GenderPredictor/GenderPredictor';
 
 function App() {
-
-
   return (
     <>
-      <AgePredictor/>  
+      <GenderPredictor/>  
     </>
   );
 }
