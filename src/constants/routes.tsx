@@ -3,5 +3,7 @@ export const ROUTES = {
     REGISTRATION: "/registration",
     GENDER: "/gender-predictor",
     AGE: "/age-predictor",
-    COUNTER: "/counter"
+    COUNTER: "/counter",
+    ABOUT: "/about-us",
+    CONTACTS: "/contacts"
 };

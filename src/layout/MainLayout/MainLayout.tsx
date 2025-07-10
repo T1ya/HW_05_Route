@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
-import NavBar from "../components/NavBar/NavBar";
+import NavBar from "../../components/NavBar/NavBar";
+import style from "./MainLayout.module.css"
 
 export default function MainLayout() {
   return (
@@ -9,7 +10,9 @@ export default function MainLayout() {
             <NavBar/>
           </nav>
         </header>
-        <Outlet/>
+        <div className={style.page}>
+          <Outlet/>
+        </div>
         <footer>
             <a href="">Instagram</a>
         </footer>
