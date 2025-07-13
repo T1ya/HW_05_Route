@@ -1,5 +1,5 @@
 export default function Contacts() {
   return (
-    <div>Contacts:</div>
+    <div className="page">Contacts:</div>
   )
 }

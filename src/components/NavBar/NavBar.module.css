@@ -8,7 +8,11 @@
   border-radius: 8px;
 }
 
-a {
+.navLink > a:hover {
+  color:#444
+}
+
+.navLink {
   text-decoration: none;
   color: #444;
   font-weight: 500;
@@ -17,7 +21,8 @@ a {
   transition: background-color 0.3s ease;
 }
 
-a:hover {
-  background-color: #e2e2e2;
-  color: #444;
+.navLinkActive {
+  color: gold;
+  padding: 6px 10px;
+  text-decoration: none;
 }

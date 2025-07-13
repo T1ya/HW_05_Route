@@ -1,17 +1,24 @@
-import { Link } from 'react-router-dom'
 import { ROUTES } from '../../constants/routes'
 import styles from './NavBar.module.css'
+import { NavLink } from 'react-router-dom'
 
 export default function NavBar() {
+  const classSelector = ({ isActive }: { isActive: boolean }) => {
+    return isActive ? styles.navLinkActive: styles.navLink;
+  };
+
   return (
     <div className={styles.navbar}>
-        <Link to={ROUTES.HOME}>Home</Link>
-        <Link to={ROUTES.REGISTRATION}>Register</Link>
-        <Link to={ROUTES.GENDER}>Gender predictor</Link>
-        <Link to={ROUTES.AGE}>Age predictor</Link>
-        <Link to={ROUTES.COUNTER}>Counter</Link>
-        <Link to={ROUTES.ABOUT}>About us</Link>
-        <Link to={ROUTES.CONTACTS}>Contacts</Link>
+        <NavLink to={ROUTES.HOME} className={classSelector}>Home</NavLink>
+        <NavLink to={ROUTES.REGISTRATION} className={classSelector}>Register</NavLink>
+        <NavLink to={ROUTES.GENDER} className={classSelector}>Gender predictor</NavLink>
+        {/* <NavLink to= {ROUTES.AGE} className={classSelector}>Age predictor</NavLink> */}
+        <NavLink to={ROUTES.COUNTER} className={classSelector}>Counter</NavLink>
+        <NavLink to={ROUTES.ABOUT} className={classSelector}>About us</NavLink>
+        <NavLink to={ROUTES.CONTACTS} className={classSelector}>Contacts</NavLink>
+        <NavLink to={ROUTES.ACCOUNT} className={classSelector}>Account</NavLink>
+        <NavLink to={ROUTES.PRODUCT} className={classSelector}>Products</NavLink>
+        <NavLink to={ROUTES.USERLIST} className={classSelector}>User list</NavLink>
     </div>
   )
 }

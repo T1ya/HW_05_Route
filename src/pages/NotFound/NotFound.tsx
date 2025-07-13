@@ -14,7 +14,7 @@ export default function NotFound() {
     }
     
   return (
-    <div>
+    <div className='page'>
         <h2>Page not found</h2>
         <img src={url} alt="cat" style={{borderRadius:15}}/>
     </div>

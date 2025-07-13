@@ -1,0 +1,46 @@
+.userCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  flex-shrink: 0;
+}
+
+.userAvatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.fieldRow {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+  max-width: 300px; 
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.fieldTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.fieldValue {
+  font-size: 0.9rem;
+  color: #555;
+}

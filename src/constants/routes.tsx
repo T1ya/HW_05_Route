@@ -5,5 +5,12 @@ export const ROUTES = {
     AGE: "/age-predictor",
     COUNTER: "/counter",
     ABOUT: "/about-us",
-    CONTACTS: "/contacts"
+    CONTACTS: "/contacts",
+    ACCOUNT: "/account",
+    ACCSETTINGS: "/account/settings",
+    ACCINFO: "/account/info",
+    PRODUCT: "/products",
+    PRODUCTID: "/products/:id",
+    USERLIST: "/users",
+    USERPAGE: "/users/:id",
 };
